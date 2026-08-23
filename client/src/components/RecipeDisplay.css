@@ -1,0 +1,134 @@
+.recipe-display {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.recipe-display h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.recipe-content {
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.recipe-content pre {
+  font-family: inherit;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+/* New styles for structured recipe display */
+.recipe-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.recipe-info p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.recipe-ingredients, .recipe-instructions, .detected-ingredients {
+  margin-bottom: 25px;
+}
+
+.recipe-display h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--light-gray);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.recipe-ingredients ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recipe-ingredients li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ingredient-name {
+  font-weight: 500;
+}
+
+.ingredient-quantity {
+  color: #666;
+}
+
+.recipe-instructions ol {
+  padding-left: 20px;
+}
+
+.recipe-instructions li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.detected-ingredients {
+  background-color: #f1f8e9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.detected-ingredients p {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-style: italic;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.save-button, .share-button {
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #d32f2f;
+}
+
+.share-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.share-button:hover {
+  background-color: #f57c00;
+} 

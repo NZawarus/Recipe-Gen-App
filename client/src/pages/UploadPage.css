@@ -1,0 +1,179 @@
+.upload-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-header h1 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.upload-header p {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--light-gray);
+  border-top: 5px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: var(--dark-gray);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  background-color: #fff0f0;
+  border: 1px solid #ffcccb;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-message p {
+  color: #d32f2f;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.retry-button {
+  background-color: #f44336;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.retry-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Add styling for recipe options */
+.recipe-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.option-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.option-group input,
+.option-group select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.option-group input:focus,
+.option-group select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Add styling for model selection */
+.model-toggle {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.model-button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.model-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.model-button:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.model-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.model-name {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #4caf50;
+}
+
+.upload-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.segmentation-info {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+} 

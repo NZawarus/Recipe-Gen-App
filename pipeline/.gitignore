@@ -1,0 +1,10 @@
+sam2.1_hiera_large.pt
+crops/
+
+*.pt
+*.pth
+*.pt.gz
+*.pt.tar.gz
+*.pt.tar.bz2
+*.pt.tar.xz
+*.pt.tar.lzma
