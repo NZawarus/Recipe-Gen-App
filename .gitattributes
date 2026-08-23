@@ -1,2 +1,5 @@
+recipes_raw_nosource_epi.json filter=lfs diff=lfs merge=lfs -text
+recipes_raw_nosource_fn.json filter=lfs diff=lfs merge=lfs -text
+ingredients.npy filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
 *.npy filter=lfs diff=lfs merge=lfs -text
